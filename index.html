@@ -2,11 +2,221 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <style>
+         @font-face {
+    font-family: semibold;
+    src: url(./static/Montserrat-SemiBold.ttf);
+  }
+
+  @font-face {
+    font-family: regularr;
+    src: url(./static/Montserrat-Regular.ttf);
+  }
+
+  @font-face {
+    font-family: lightitalic;
+    src: url(./static/Montserrat-LightItalic.ttf);
+  }
+
+  @font-face {
+    font-family: lightt;
+    src: url(./static/Montserrat-Light.ttf);
+  }
+
+  @font-face {
+    font-family: mediumm;
+    src: url(./static/Montserrat-Medium.ttf);
+  }
+
+        img{
+            width: 130px;
+        }
+        h1{
+            font-size: 12px;
+            color: #2bbeb3;
+            font-family: "regularr";
+        }
+
+        .firstspan{
+            font-family: "lightitalic";
+            color: #242225;
+            font-size: 8px;
+            position: relative;
+            top: -12px;
+        }
+.number, .email{
+    font-family: "lightt";
+    font-size: 6px;
+    
+}
+
+.number{
+    padding-right: 15px;
+}
+
+        .t, .e{
+            font-family: "mediumm" !important;
+        }
+.width{
+    width: 200px;
+    position: relative;
+    top: -11px;
+}
+
+
+.email{
+    border-left: 0.5px solid black;
+   padding-left: 15px;
+}
+
+.address{
+    font-family: "semibold";
+    font-size: 6px;
+    position: relative;
+    top: 0px;
+    color: #7E7070;
+}
+
+a{
+    text-decoration: none;
+    color: #2bbeb3;
+    font-size: 6px;
+    font-family: "mediumm";
+    margin-top: 5%;
+}
+
+.first-td{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.second{
+    padding-left: 10px;
+}
+
+.second h1{
+    background-color: #FBDD08;
+    color: #6D6F70;
+}
+
+.p-0 span{
+    border-bottom: 1px solid #FBDD08;
+    display: inline-block;
+    color: black;
+
+}
+
+.p-0{
+    padding-left: 0;
+}
+
+.p-0 h1, .p-0 span{
+    padding-left: 10px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    width: 100%;
+}
+
+.emaill{
+    display: block;
+    font-size: 6px;
+    color: #707176;
+    font-family: "lightt";
+}
+
+
+.connect{
+    color: #6e6f71;
+    position: relative;
+    top: -23px;
+}
+
+
+.social{
+    position: absolute;
+    top: 129px;
+    display: flex;
+}
+
+
+.social a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #FBDD08;
+    margin-left: 5px;
+    color: #6D6F70;
+}
+
+.social a i{
+    color: #6D6F70;
+    font-size: 8px;
+}
+
+.social a:nth-child(1){
+    margin-left: 0;
+}
+
+.first-td a{
+    color: #6e6f71;
+}
+    </style>
 </head>
 <body>
     
+
+<table>
+
+<tr>
+    <td rowspan="4">
+        <div  class="first-td">
+            <img src="./font/img1.png" alt="">
+            <a href="https://www.hugedomains.com/domain_profile.cfm?d=lssglobal.com" target="_blank">www.lssglobal.com</a>
+        </div>
+
+
+    </td>
+    <td class="second p-0">
+        <h1>
+            John Smith
+        </h1>
+        <span class="firstspan">
+            General Manager
+        </span>
+    </td>
+</tr>
+<tr>
+
+    <td class="width second connect">
+        <span class="number">Tel.: +994 12 500 51 70 </span>
+        <span class="email">Mob.: +994 50 500 51 70</span>
+        <span class="emaill">E-mail: johnsmith@lssglobal.com</span>
+    </td>
+</tr>
+<tr>
+   
+    <td class="address second">240 Your Street Name, Your City, <br> Your Country 11010</td>
+</tr>
+
+<tr>
+    <td class="second social">
+
+    </td>
+</tr>
+</table>
+
+
 </body>
 </html>
