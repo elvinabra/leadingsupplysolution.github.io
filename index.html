@@ -4,207 +4,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-    <style>
-         @font-face {
-    font-family: semibold;
-    src: url(./static/Montserrat-SemiBold.ttf);
-  }
-
-  @font-face {
-    font-family: regularr;
-    src: url(./static/Montserrat-Regular.ttf);
-  }
-
-  @font-face {
-    font-family: lightitalic;
-    src: url(./static/Montserrat-LightItalic.ttf);
-  }
-
-  @font-face {
-    font-family: lightt;
-    src: url(./static/Montserrat-Light.ttf);
-  }
-
-  @font-face {
-    font-family: mediumm;
-    src: url(./static/Montserrat-Medium.ttf);
-  }
-
-body{
-    color: #231f20;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-        img{
-            width: 130px;
-        }
-        h1{
-            font-size: 12px;
-        }
-
-        .firstspan{
-            font-size: 8px;
-            position: relative;
-            top: -12px;
-        }
-.number, .email{
-    font-family: "lightt";
-    font-size: 6px;
-    
-}
-
-.number{
-    padding-right: 15px;
-}
-
-        .t, .e{
-            font-family: "mediumm" !important;
-        }
-.width{
-    width: 200px;
-    position: relative;
-    top: -11px;
-}
-
-
-.email{
-    border-left: 0.5px solid black;
-   padding-left: 15px;
-}
-
-.address{
-
-    font-size: 6px;
-    position: relative;
-    top: -19px;
-}
-
-
-.first-td{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.second{
-    padding-left: 10px;
-}
-
-.second h1{
-    background-color: #FBDD08;
-}
-
-.p-0 span{
-    display: inline-block;
-    color: black;
-
-}
-
-.p-0{
-    padding-left: 0;
-}
-
-.p-0 h1, .p-0 span{
-    padding-left: 10px;
-    padding-top: 3px;
-    padding-bottom: 3px;
-    width: 100%;
-}
-
-.emaill{
-    display: block;
-    font-size: 6px;
-    font-family: "lightt";
-}
-
-
-.connect{
-    position: relative;
-    top: -20px;
-}
-
-
-.social{
-    position: absolute;
-    top: 129px;
-    display: flex;
-}
-
-
-.social a{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-    background-color: #FBDD08;
-    margin-left: 5px;
-}
-
-.social a i{
-    font-size: 8px;
-}
-
-.social a:nth-child(1){
-    margin-left: 0;
-}
-
-    </style>
 </head>
 <body>
-    
+    <model-viewer id="transform" orientation="20deg 0 0" shadow-intensity="1" camera-controls touch-action="pan-y" ar src="./untitled.glb" alt="A 3D model of an astronaut">
 
-<table>
-
-<tr>
-    <td style="display: flex; justify-content: flex-start; padding-left: 10px;">
-        <div  class="first-td">
-            <img src="./Untitled-1.png" alt="" style="width: 150px;">
-            <br>
-
+      </model-viewer>
+      <div class="controls">
+        <div>Roll: <input id="roll" value="20" size="3" class="number"> degrees</div>
+        <div>Pitch: <input id="pitch" value="0" size="3" class="number"> degrees</div>
+        <div>Yaw: <input id="yaw" value="0" size="3" class="number"> degrees</div>
+        <div>
+          Scale: X: <input id="x" value="1" size="3" class="number">,
+          Y: <input id="y" value="1" size="3" class="number">,
+          Z: <input id="z" value="1" size="3" class="number">
         </div>
-
-
-    </td>
-</tr>
-<tr>    
-    <td class="second p-0" style="padding-left: 10px;  position: relative; top: -26px;">
-    <h1 style="font-weight: bold; font-size: 28px;">
-        John Smith
-    </h1>
-    <span class="firstspan" style="font-weight: 700; font-size: 12px; text-transform: uppercase;">
-        General Manager
-    </span>
-</td>
-</tr>
-<tr>
-
-    <td class="width second connect" style="padding-left: 20px; padding-top: 5px; width: 350px; line-height: 20px; position: relative; top: -35px;">
-        <span class="number" style="font-weight:600; font-size: 10px; text-decoration: none !important;">Tel.: +994 12 500 51 70 </span>
-        <span class="email"  style="font-weight:600; font-size: 10px; text-decoration: none !important;">Mob.: +994 50 500 51 70</span>
-        <span class="emaill"  style="font-weight:600; font-size: 10px; text-decoration: none !important;">E-mail: johnsmith@lss-global.com</span>
-    </td>
-</tr>
-<tr>
-   
-    <td class="address second" style="font-weight:900; font-size: 10px; padding-left: 20px; padding-top: 5px; width: 350px; position: relative; top: -35px;"> <strong style="text-decoration: none !important;">Yakuplu mah. Hürriyet Blv. SKEPORT Skyport Residence No: 1 iç kapı, No: 64 Beylikdüzü / İstanbul</strong>
+        <button id="frame">Update Framing</button>
+      </div>
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.1.1/model-viewer.min.js"></script>
+    <script>
+        const modelViewerTransform = document.querySelector("model-viewer#transform");
+        const roll = document.querySelector('#roll');
+        const pitch = document.querySelector('#pitch');
+        const yaw = document.querySelector('#yaw');
+        const x = document.querySelector('#x');
+        const y = document.querySelector('#y');
+        const z = document.querySelector('#z');
+        const frame = document.querySelector('#frame');
         
-    </td>
-</tr>
-
-<tr>
-
-</tr>
-</table>
-
-<script>
-    fetch('https://api.ipify.org/?format=json').then(results => results.json()).then(data => console.log(data.ip))
-</script>
+        frame.addEventListener('click', () => {
+          modelViewerTransform.updateFraming();
+        });
+        
+        const updateOrientation = () => {
+          modelViewerTransform.orientation = `${roll.value}deg ${pitch.value}deg ${yaw.value}deg`;
+        };
+        
+        const updateScale = () => {
+          modelViewerTransform.scale = `${x.value} ${y.value} ${z.value}`;
+        };
+        
+        roll.addEventListener('input', () => {
+          updateOrientation();
+        });
+        pitch.addEventListener('input', () => {
+          updateOrientation();
+        });
+        yaw.addEventListener('input', () => {
+          updateOrientation();
+        });
+        x.addEventListener('input', () => {
+          updateScale();
+        });
+        y.addEventListener('input', () => {
+          updateScale();
+        });
+        z.addEventListener('input', () => {
+          updateScale();
+        });
+        </script>
 </body>
 </html>
